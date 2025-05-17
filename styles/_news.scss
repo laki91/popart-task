@@ -1,0 +1,115 @@
+.news {
+  width: 100%;
+  position: relative;
+  margin-top: 49px;
+  .news-wrapper {
+    max-width: 1400px;
+    margin: auto;
+    h1 {
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .news-cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin-top: 40px;
+      justify-content: space-between;
+      .news-card {
+        color: white;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        width: 45%;
+        position: relative;
+        overflow: hidden;
+        .image-wrapper {
+          width: 100%;
+          height: auto;
+          overflow: hidden;
+          cursor: pointer;
+          img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.4s ease, filter 0.4s ease;
+          }
+          &:hover img {
+            transform: scale(1.1);
+          }
+        }
+        p {
+          font-size: $font-size-small;
+          line-height: 32px;
+          margin: 0;
+        }
+        h4 {
+          margin: 0 0 10px 0;
+        }
+        .read-more {
+          color: $color-yellow;
+          text-decoration: none;
+          font-weight: bold;
+          font-size: 18px;
+          margin-top: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+    .btn-join {
+      background-color: $color-yellow;
+      color: $color-dark-blue;
+      font-family: $font-primary;
+      font-size: 18px;
+      border: none;
+      width: 248px;
+      height: 65px;
+      margin-top: 20px;
+      cursor: pointer;
+      text-transform: uppercase;
+      clip-path: polygon(10% 0%, 90% 0%, 100% 50%, 90% 100%, 10% 100%, 0% 50%);
+      transition: background-color 0.3s ease;
+      &:hover {
+        background-color: lightseagreen;
+        color: white;
+      }
+    }
+    .arrow-div {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: 200px;
+      margin-top: 150px;
+    }
+  }
+  .blue-circle {
+    position: absolute;
+    top: -18%;
+    left: 0;
+  }
+  .ocagon {
+    position: absolute;
+    left: 8%;
+    bottom: 6%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .news {
+    .news-wrapper {
+      .news-cards {
+        .news-card {
+          width: 100%;
+        }
+      }
+    }
+    .ocagon {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .blue-circle,
+  .ocagon {
+    display: none;
+  }
+}

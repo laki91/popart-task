@@ -1,0 +1,95 @@
+.about-section {
+  width: 100%;
+  position: relative;
+  .container-about {
+    max-width: 1400px;
+    justify-content: center;
+    margin: auto;
+    h2 {
+      .highlight {
+        color: $color-yellow;
+      }
+    }
+    .about-text {
+      width: 100%;
+      display: flex;
+      gap: 150px;
+      .text {
+        padding-right: 20px;
+        max-width: 926px;
+      }
+
+      .about-decor {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transform: translateY(-90px);
+        .arrow {
+          width: 70px;
+          cursor: pointer;
+        }
+      }
+    }
+    .image-div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 60px 0;
+
+      .anm {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.5s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  .magic {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 30px;
+    position: absolute;
+    right: 90px;
+    top: 270px;
+  }
+  .red-circle {
+    position: absolute;
+    bottom: 18%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .text {
+    padding: 0 30px;
+  }
+  .red-circle {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-section {
+    .container-about {
+      .about-text {
+        flex-direction: column;
+        .text {
+          padding: 0 30px;
+        }
+        .about-decor {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+        }
+      }
+    }
+    .magic {
+      opacity: 0.2;
+    }
+  }
+}

@@ -1,0 +1,60 @@
+// COLORS
+$color-black: #000000;
+$color-white: #ffffff;
+$color-pink: #ff007f;
+$color-yellow: #ccff00;
+$color-orange: #ff6600;
+$color-blue: #00ccff;
+$color-dark-blue: #361281;
+$color-purple: #2e0071;
+$discord: #d5ff2f;
+$blue: #54f2f2;
+$red: #FF6F1F;
+
+// FONT
+$font-primary: "Aspergit", sans-serif;
+$font-secondary: "Futura PT", sans-serif;
+
+// FONT SIZES
+$font-size-h1: 113px;
+$font-size-h2: 94px;
+$font-size-h3: 54px;
+$font-size-h4: 44px;
+$font-size-h5: 30px;
+$font-size-body: 30px;
+$font-size-small: 28px;
+
+$font-size-h1-1440: 90px;
+$font-size-h2-1440: 75px;
+$font-size-h3-1440: 45px;
+$font-size-h4-1440: 36px;
+$font-size-h5-1440: 26px;
+$font-size-body-1440: 26px;
+$font-size-small-1440: 24px;
+
+// ≤1024px (normalno smanjeno za tablete)
+$font-size-h1-1024: 70px;
+$font-size-h2-1024: 58px;
+$font-size-h3-1024: 36px;
+$font-size-h4-1024: 30px;
+$font-size-h5-1024: 22px;
+$font-size-body-1024: 22px;
+$font-size-small-1024: 20px;
+
+// ≤768px (mobilni)
+$font-size-h1-768: 52px;
+$font-size-h2-768: 42px;
+$font-size-h3-768: 30px;
+$font-size-h4-768: 26px;
+$font-size-h5-768: 20px;
+$font-size-body-768: 18px;
+$font-size-small-768: 16px;
+
+$font-line-height: 33px;
+$letter-spacing: -4%;
+
+// Font weights
+$font-weight-regular: 300;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;

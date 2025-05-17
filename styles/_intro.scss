@@ -1,0 +1,217 @@
+.intro-section {
+  width: 100%;
+  position: relative;
+  .headerIcon {
+    display: flex;
+    justify-content: center;
+  }
+  .container-intro {
+    display: flex;
+    max-width: 1550px;
+    justify-content: center;
+    margin: auto;
+    h1 {
+      font-weight: $font-weight-bold;
+      color: $color-white;
+      line-height: 113%;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      .highlight {
+        color: $color-yellow;
+      }
+    }
+  }
+  .join-container {
+    @extend .container-intro;
+    gap: 200px;
+    .intro-icon-div {
+      width: 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      img {
+        animation: rotateInfinite 8s linear infinite;
+      }
+    }
+    .intro-join-div {
+      width: 50%;
+      .text-cta {
+        display: flex;
+        flex-direction: column;
+        p {
+          font-weight: $font-weight-regular;
+          line-height: 33px;
+          letter-spacing: -4%;
+        }
+      }
+      .join-elements {
+        display: flex;
+        margin-top: 30px;
+        .btn-join {
+          background-color: $color-yellow;
+          color: $color-dark-blue;
+          font-family: $font-primary;
+          font-size: 18px;
+          padding: 20px 40px;
+          border: none;
+          width: 217px;
+          height: 65px;
+          cursor: pointer;
+          text-transform: uppercase;
+          clip-path: polygon(
+            10% 0%,
+            90% 0%,
+            100% 50%,
+            90% 100%,
+            10% 100%,
+            0% 50%
+          );
+          transition: background-color 0.3s ease;
+          &:hover {
+            background-color: lightseagreen;
+            color: white;
+          }
+        }
+        img {
+          transform: translateY(35px);
+        }
+      }
+    }
+  }
+  .image-container {
+    margin-top: 100px;
+    max-width: 1346px;
+    margin: auto;
+
+    .intro-picture-div {
+      display: flex;
+      justify-content: center;
+      max-width: 100%;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .arrow-circle {
+    display: flex;
+    padding-top: 100px;
+    .arrow-div {
+      width: 80%;
+      display: flex;
+      justify-content: center;
+      img {
+        width: 70px;
+        transform: translateY(-70px);
+        cursor: pointer;
+      }
+    }
+  }
+  .blue-circle {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .decor-icons {
+    position: fixed;
+    top: 26%;
+    right: 0;
+    width: 80px;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    z-index: 999;
+    backdrop-filter: blur(10px);
+    border-radius: 12px 0 0 12px;
+
+    img {
+      width: 24px;
+      height: 24px;
+      transition: transform 0.2s ease;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+
+@keyframes rotateInfinite {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 1440px) {
+  h1 {
+    font-size: $font-size-h1-1440;
+  }
+}
+
+@media (max-width: 1024px) {
+  .intro-section {
+    h1 {
+      font-size: $font-size-h1-1024;
+    }
+
+    .join-container {
+      width: 100%;
+      flex-direction: column;
+      gap: 50px;
+      .intro-icon-div {
+        width: 100%;
+        justify-content: center;
+      }
+      .intro-join-div {
+        width: 100%;
+        .text-cta {
+          padding: 10px 40px;
+        }
+        .join-elements {
+          justify-content: center;
+        }
+      }
+    }
+    .arrow-circle {
+      .arrow-div {
+        img {
+          width: 40px;
+          transform: translateY(-70px);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: $font-size-h1-768;
+  }
+  .intro-section {
+    .join-container {
+      margin-bottom: 30px;
+    }
+    .arrow-circle {
+      display: none;
+      .arrow-div {
+        img {
+          width: 40px;
+          transform: translateY(-70px);
+        }
+      }
+    }
+    .blue-circle {
+      display: none;
+    }
+  }
+}
