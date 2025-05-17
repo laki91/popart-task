@@ -92,10 +92,23 @@
   }
 }
 
+@media (max-width: 1224px) {
+  .news {
+    .news-wrapper {
+      .news-cards {
+        .news-card {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1024px) {
   .news {
     .news-wrapper {
       .news-cards {
+        width: 100%;
         .news-card {
           width: 100%;
         }

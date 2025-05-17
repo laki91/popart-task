@@ -1235,7 +1235,15 @@ small {
   bottom: 6%;
 }
 
+@media (max-width: 1224px) {
+  .news .news-wrapper .news-cards .news-card {
+    width: 100%;
+  }
+}
 @media (max-width: 1024px) {
+  .news .news-wrapper .news-cards {
+    width: 100%;
+  }
   .news .news-wrapper .news-cards .news-card {
     width: 100%;
   }
@@ -1299,7 +1307,7 @@ small {
     opacity: 0.2;
   }
   .footer .footer-wrapper {
-    justify-content: space-between;
+    justify-content: start;
     padding: 40px;
   }
 }
